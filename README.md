@@ -4,7 +4,7 @@
 🎉 Open source 🎉
 
 # Completion Status
-Macroocsm 2.0 is still in development . If you want to try out current features of Macrocosm you can download the plugin and check it yourself.
+Macroocsm 2.0 is still in development. If you want to try out current features of Macrocosm you can download the plugin and check it yourself.
 
 ## Running Macrocosm locally
 It's really not that hard.
