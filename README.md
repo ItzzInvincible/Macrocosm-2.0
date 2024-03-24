@@ -4,35 +4,27 @@
 🎉 Open source 🎉
 
 # Completion Status
-Macroocsm is far from completed and is not ready for production use. If you want to try out current features of Macrocosm you can compile it yourself.
+Macroocsm 2.0 is still in development . If you want to try out current features of Macrocosm you can download the plugin and check it yourself.
 
 ## Running Macrocosm locally
 It's really not that hard.
 
-**NOTE:** all the steps of this tutorial were tested on a Linux system, but I don't really see a reason why it should not work on Windows/macOS.
 
 ### Prerequisites
-1. Java 17 (I use Temurin)
-2. A MongoDB instance running locally
-3. *(optionally)* A Prometheus instance running locally to gather server metrics
-4. Like 10 minutes you are willing to spend looking at gradle compiling kotlin
+1. Java 17
+2. Paper 1.19.3
+3. A MongoDB instance running locally
+4. *(optionally)* A Prometheus instance running locally to gather server metrics
+5. Like 10 minutes you are willing to spend looking at gradle compiling kotlin
 
-### Actual usage steps:
-* Clone the repository
+#Actual usage steps:
 
-```sh
-git clone https://github.com/Maxuss/Macrocosm && cd Macrocosm
-```
+* Download the JAR file
 
-* Compile the JAR file
+You can download the plugin by clicking [here](https://github.com/ItzzInvincible/Macrocosm-2.0/releases/tag/latest)
+Two jar files will appear , you want the one, titled something like `Macrocosm-<version>.jar`, and not `Macrocosm-<version>-dev.jar`.
 
-Make sure to use JDK for Java 17
-```sh
-./gradlew reobfJar
-```
-Two jar files will appear in `build/libs` directory, you want the one, titled something like `Macrocosm-<version>.jar`, and not `Macrocosm-<version>-dev.jar`.
-
-* Setting up the MongoDB
+* Setting up the MongoDB *(optional)*
 
 You will need an empty database named `macrocosm` and a user:
 
