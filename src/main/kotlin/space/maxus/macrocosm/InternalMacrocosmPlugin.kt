@@ -89,6 +89,16 @@ import kotlin.io.path.*
 import kotlin.random.Random
 
 @OptIn(UnsafeFeature::class)
+
+val protocolManager by lazy { InternalMacrocosmPlugin.PACKET_MANAGER }
+val Macrocosm by lazy { InternalMacrocosmPlugin.INSTANCE }
+val logger by lazy { Macrocosm.logger }
+val currentIp by lazy { MacrocosmConstants.CURRENT_IP }
+val discordBotToken by lazy { MacrocosmConstants.DISCORD_BOT_TOKEN }
+
+@UnsafeFeature
+val unsafe by lazy { InternalMacrocosmPlugin.UNSAFE }
+
 class InternalMacrocosmPlugin : KSpigot() {
     companion object {
         lateinit var INSTANCE: InternalMacrocosmPlugin; private set
@@ -430,12 +440,3 @@ class InternalMacrocosmPlugin : KSpigot() {
         ServerShutdownEvent().callEvent()
     }
 }
-
-val protocolManager by lazy { InternalMacrocosmPlugin.PACKET_MANAGER }
-val Macrocosm by lazy { InternalMacrocosmPlugin.INSTANCE }
-val logger by lazy { Macrocosm.logger }
-val currentIp by lazy { MacrocosmConstants.CURRENT_IP }
-val discordBotToken by lazy { MacrocosmConstants.DISCORD_BOT_TOKEN }
-
-@UnsafeFeature
-val unsafe by lazy { InternalMacrocosmPlugin.UNSAFE }
