@@ -162,9 +162,9 @@ class InternalMacrocosmPlugin : KSpigot() {
                 AsyncLauncher.launchApi()
             }
         }
-        System.setProperty("mongo.user", config.getString("connections.mongo.username")!!)
-        System.setProperty("mongo.pass", config.getString("connections.mongo.password")!!)
-        MongoDb.init()
+        // System.setProperty("mongo.user", config.getString("connections.mongo.username")!!)
+        // System.setProperty("mongo.pass", config.getString("connections.mongo.password")!!)
+        // MongoDb.init()
         MacrocosmMetrics.init()
 
         Threading.runAsync {
