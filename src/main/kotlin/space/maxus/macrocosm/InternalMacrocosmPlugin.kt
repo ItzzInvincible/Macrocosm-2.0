@@ -127,9 +127,9 @@ class InternalMacrocosmPlugin : KSpigot() {
 
         config.load(cfgFile)
 
-        if (!config.getBoolean("connections.mongo.enabled")) {
-            disableImmediately = true
-            return
+        //if (!config.getBoolean("connections.mongo.enabled")) {
+        //    disableImmediately = true
+        //    return
         }
         isSandbox = config.getBoolean("game.sandbox")
 
